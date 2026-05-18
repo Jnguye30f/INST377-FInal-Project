@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<title>Cybersecurity Threat Detector</title>
+<link rel="stylesheet" href="styler.css"/>
+</head>
+
+<body>
+     <div class="container">
+    <header>
+        <h1> About this Project</h1>
+         <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="threats.html">Search Threats</a>
+    </nav>
+    </div>
+    <main>
+        <section>
+            <label for="searchInput">Search for software or vendor (e.g "microsoft)</label>
+            <input type="text" id="searchInput" placeholder="Enter keyword"/>
+            <button id="searchBtn">Search</button>
+        </section>
+
+        <section id="results">
+            <h2>Recent CVEs</h2>
+            <p class="loading" hidden>Loading results...</p>
+            <div id="List"></div>
+
+        </section>
+        <section>
+            <div class="watcher">
+            
+            <h2>Watchlist</h2>
+            <div id="savedList"></div>
+               </div> 
+        </section>
+
+
+    </main>
+
+  <script src="app.js"></script>
+
+  
+</html>
